@@ -10,20 +10,20 @@ const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  console.log(location)
+  // console.log(location)
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
     const pass = form.pass.value;
-    console.log(email, pass);
+    // console.log(email, pass);
 
     login(email, pass)
       .then(res => {
         setUser(res.user)
         navigate(location?.state ? location.state : '/')
-        console.log(res.user)
+        // console.log(res.user)
       })
       .catch(re => {
         setError({ ...error, login: re.code })

@@ -7,15 +7,13 @@ const NewsDetails = () => {
 
 const data = useLoaderData() 
 const news = data.data[0] ;
-console.log(news)
+// console.log(news)
 
 const {
-    author: { name: authorName, img: authorImage, published_date: publishedDate },
 title,
 image_url,
 details,
-rating: { number: ratingNumber },
-total_view,
+
 
   } = news;
 

@@ -11,7 +11,7 @@ useEffect( () => {
     .then(res => res.json())
     .then(data => setData(data.data.news_category))
 } , [])
-console.log(data)
+// console.log(data)
     return (
         <div>
          <h2 className="font-semibold mb-6">All Category</h2>

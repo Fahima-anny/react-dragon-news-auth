@@ -19,18 +19,18 @@ const handleSubmit = e => {
   const photo = form.get("photo") ;
   const pass = form.get("pass") ;
 
-  console.log({name, photo, email, pass}) ;
+  // console.log({name, photo, email, pass}) ;
 createUser(email,pass)
 .then( res => {
   setUser(res.user)
-  console.log(res.user)
+  // console.log(res.user)
   updateUser({displayName: name, photoURL: photo})
   .then( () => {
     navigate('/')
   })
-  .catch(er=> console.log(er))
+  .catch(er=> alert(er))
 })
-.catch(er => console.error(er))
+.catch(er => alert(er))
  
 }
 

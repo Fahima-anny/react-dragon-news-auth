@@ -14,6 +14,7 @@ const {user, logout} = useContext(AuthContext) ;
                 <Link to='/'>Home</Link>
                 <Link to='/career'>Career</Link>
                 <Link to='/about'>About</Link>
+                <Link to='/'>Contact</Link>
             </div>
             <div className="flex justify-end items-center gap-5">
                 <div>

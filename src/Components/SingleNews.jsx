@@ -7,7 +7,7 @@ const SingleNews = (props = {}) => {
 
     const {news} = props || {}
 
-    console.log(news)
+    // console.log(news)
 
     const {
         author: { name: authorName, img: authorImage, published_date: publishedDate },
