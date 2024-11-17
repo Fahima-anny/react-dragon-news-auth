@@ -1,5 +1,6 @@
 import { FaRegStar } from "react-icons/fa";
 import { FiBookmark, FiEye, FiShare2 } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 
 const SingleNews = (props = {}) => {
@@ -15,6 +16,7 @@ const SingleNews = (props = {}) => {
     details,
     rating: { number: ratingNumber },
     total_view,
+
       } = news;
 
     return (
@@ -53,7 +55,7 @@ const SingleNews = (props = {}) => {
         <div className="p-4">
           <p className="text-gray-600 text-sm mb-3">
             {details.slice(0, 100)}...{" "}
-            <span className="text-blue-500 cursor-pointer">Read More</span>
+            <Link to={`/news/${news._id}`} className="text-blue-500 cursor-pointer">Read More</Link>
           </p>
   
           {/* Footer: Rating and Views */}

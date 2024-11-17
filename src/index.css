@@ -7,3 +7,7 @@
 a.active {
     background-color: #cfcfcf;
 }
+
+.card-body{
+    padding: 0 !important ;
+}
